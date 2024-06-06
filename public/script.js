@@ -24,6 +24,8 @@ function buscarEndereco() {
                 document.getElementById('logradouro').value = data.logradouro;
                 document.getElementById('cidade').value = data.localidade;
                 document.getElementById('uf').value = data.uf;
+                document.getElementById('ibge').value = data.ibge;
+                document.getElementById('bairro').value= data.bairro;
             })
             .catch(error => {
                 console.error('Erro ao buscar o CEP:', error);
